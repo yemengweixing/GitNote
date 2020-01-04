@@ -325,16 +325,6 @@ yarn add 模块 --dev
 
 
 
-
-
-
-
-
-
-
-
-
-
 使用国内镜像加速npm和yarn
 
 \1. npm config set registry=https://registry.npm.taobao.org
@@ -342,3 +332,43 @@ yarn add 模块 --dev
 \2. yarn config set registry https://registry.npm.taobao.org
 
 \3. 下载cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+# npm使用国内淘宝镜像
+
+临时使用
+
+```
+npm --registry https://registry.npm.taobao.org install express
+```
+
+## 永久使用
+
+### 直接配置
+
+```
+npm config set registry https://registry.npm.taobao.org
+```
+
+通过如下命令可以查看是否配置成功
+
+```
+npm config get registry
+
+npm info express
+```
+
+！！！如果需要恢复成原来的官方地址只需要执行如下命令:
+
+```
+npm config set registry https://registry.npmjs.org
+```
+
+
+
+安装cnpm
+
+```cpp
+npm i -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+cnpm config ls 查看
