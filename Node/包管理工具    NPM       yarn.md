@@ -145,34 +145,20 @@ $ cnpm info connect
 (3)之后运行`npm install`命令时，会自动安装`msbuild`到`node_modules`目录中 
 (4)之后运行`npm install --production`或者注明`NODE_ENV`变量值为`production`时，会自动安装`msbuild`到`node_modules`目录中
 
-## 4.`npm install --save-dev`
+## 4.npm install --save-dev
 
 (1)会把`msbuild`包安装到`node_modules`目录中 
 (2)会在`package.json`的`devDependencies`属性下添加`msbuild` 
 (3)之后运行`npm install`命令时，会自动安装`msbuild`到`node_modules`目录中 
-(4)之后运行`npm install --production`或者注明`NODE_ENV`变量值为`production`时，不会自动安装`msbuild`到`node_modules`目录中
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(4)之后运行`npm install --production`或者注明`NODE_ENV`变量值为`production`时，不会自动安装`msbuild`到`node_modules`目录
 
 
 
 npm install -d 就是npm install --save-dev
 
 npm insatll -s 就是npm install --save
+
+一句话:`--save-dev`是你开发时依赖的东西，`--save`是发布后还依赖的东西
 
 
 
@@ -204,7 +190,9 @@ devDependencies  里面的插件只用于开发环境，不用于生产环境，
 
 
 
+# npm安装依赖至指定版本的方法
 
+npm update webpack@latest         npm update 模块名字@版本号
 
 
 
