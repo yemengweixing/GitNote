@@ -1,3 +1,25 @@
+# npm install出现Unexpected end of JSON input while parsing near错误解决方法
+
+# npm cache clean --force
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  # npm ERR! errno -4048
 
 以为还真是权限不够，感觉有点奇怪，用管理员权限执行，有时还真有用，不过后面查了下，时缓存的问题，清理下缓存就行，不用管理员权限。
