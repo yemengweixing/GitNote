@@ -1,3 +1,49 @@
+###### npm -v           得到npm版本号
+
+###### npm config list       获取npm配置信息
+
+
+
+###### 一
+
+###### 点击安装，选择自己要安装的路径，(默认安装为C:\Program Files\nodejs)
+
+###### 此处选择的是：**D:\Program Files\nodejs**，安装至完成
+
+
+
+###### 二 改变原有的环境变量
+
+###### 二。一 环境变量的配置
+
+1、首先配置npm的全局模块的存放路径、cache的路径，此处我选择放在：**D:\Program Files\nodejs**
+输入如下命令：
+
+```
+npm config set prefix "D:\Program Files\nodejs\node_global"
+npm config set cache"D:\Program Files\nodejs\node_cache"
+```
+
+**D:\Program Files\nodejs**文件夹中看到相应名字的文件夹 多
+
+
+
+二。二 环境变量
+
+系统环境变量添加NODE_PATH,输入路径为：
+【D:\Program Filesnodejs\node_global\node_modules】
+操作如下：我的电脑右击，打开属性->高级系统设置->环境变量->新建（系统变量下）->输入变量名NODE_PATH->变量值：输入上面路径
+
+【用户变量】下的【Path】修改为【D:\Program Files\nodejs\node_global】
+
+
+
+
+
+
+
+
+
 npm init
 
 进行项目初始化
@@ -353,7 +399,7 @@ npm config set registry https://registry.npmjs.org
 
 
 
-安装cnpm
+# 安装cnpm
 
 ```cpp
 npm i -g cnpm --registry=https://registry.npm.taobao.org
